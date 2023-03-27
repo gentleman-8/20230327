@@ -29,5 +29,14 @@ namespace _20230327
         {
 
         }
+
+        private void txtCM_KeyUp(object sender, KeyEventArgs e)
+        {
+            double douCM; //宣告一個double變數，變數名稱叫douCM
+
+            douCM = Convert.ToDouble(txtCM.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態
+
+            txtM.Text = string.Format("{0:0.##########}", douCM / 100);
+        }
     }
 }
