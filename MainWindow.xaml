@@ -12,8 +12,8 @@
         <TextBox x:Name="txtYard" HorizontalAlignment="Left" Margin="440,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
         <TextBox x:Name="txtM" HorizontalAlignment="Left" Margin="268,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="440,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
-        <TextBox x:Name="txttIn" HorizontalAlignment="Left" Margin="98,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
-        <TextBox x:Name="txtCM" HorizontalAlignment="Left" Margin="99,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="58" KeyUp="txtCM_KeyUp"/>
+        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Margin="98,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
+        <TextBox x:Name="txtCM" HorizontalAlignment="Left" Margin="99,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="58" KeyUp="txtCM_KeyUp" TextChanged="txtCM_TextChanged"/>
         <TextBox x:Name="txtInfo" HorizontalAlignment="Left" Margin="99,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="483" Height="57"/>
         <Label HorizontalAlignment="Left" Margin="98,139,0,0" VerticalAlignment="Top"/>
         <Label Content="碼" HorizontalAlignment="Left" Margin="440,235,0,0" VerticalAlignment="Top"/>
