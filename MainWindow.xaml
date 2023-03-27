@@ -8,11 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="binAllClear" Content="清除" HorizontalAlignment="Left" Margin="98,57,0,0" VerticalAlignment="Top" Height="64" Width="143" Click="binAllClear_Click"/>
-        <TextBox x:Name="txtFt" HorizontalAlignment="Left" Margin="268,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
-        <TextBox x:Name="txtYard" HorizontalAlignment="Left" Margin="440,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
-        <TextBox x:Name="txtM" HorizontalAlignment="Left" Margin="268,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="440,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
-        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Margin="98,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57"/>
+        <TextBox x:Name="txtFt" HorizontalAlignment="Left" Margin="268,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" KeyUp="txtFt_KeyUp"/>
+        <TextBox x:Name="txtYard" HorizontalAlignment="Left" Margin="440,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" KeyUp="txtYard_KeyUp"/>
+        <TextBox x:Name="txtM" HorizontalAlignment="Left" Margin="268,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" TextChanged="TextBox_TextChanged" KeyUp="txtM_KeyUp"/>
+        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="440,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" KeyUp="txtKM_KeyUp"/>
+        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Margin="98,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="57" KeyUp="txtIn_KeyUp"/>
         <TextBox x:Name="txtCM" HorizontalAlignment="Left" Margin="99,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="58" KeyUp="txtCM_KeyUp" TextChanged="txtCM_TextChanged"/>
         <TextBox x:Name="txtInfo" HorizontalAlignment="Left" Margin="99,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="483" Height="57"/>
         <Label HorizontalAlignment="Left" Margin="98,139,0,0" VerticalAlignment="Top"/>
