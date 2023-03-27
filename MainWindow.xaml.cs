@@ -95,7 +95,7 @@ namespace _20230327
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(1, douOutput * 100); // 事先將公尺轉換成公分
+                caculateAnswer(1, douOutput * 1000); // 事先將公尺轉換成公分
             }
             else
             {
@@ -110,7 +110,7 @@ namespace _20230327
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(2, douOutput * 100000);
+                caculateAnswer(2, douOutput * 1000000);
             }
             else
             {
@@ -125,7 +125,7 @@ namespace _20230327
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(3, douOutput * 2.54);
+                caculateAnswer(3, douOutput * 1000000000);
             }
             else
             {
@@ -141,7 +141,7 @@ namespace _20230327
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(4, douOutput * 30.48);
+                caculateAnswer(4, douOutput * 28349.523125);
             }
             else
             {
@@ -156,7 +156,7 @@ namespace _20230327
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(5, douOutput * 91.44);
+                caculateAnswer(5, douOutput * 453.59237);
             }
             else
             {
