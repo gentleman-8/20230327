@@ -31,21 +31,7 @@ namespace _20230327
         }
         string strInput; // 字串型態的strInput變數
         double douOutput; // double浮點數型態的douOutput變數
-        private void txtCM_KeyUp(object sender, KeyEventArgs e)
-
-        {
-            strInput = txtCM.Text;
-
-            if (double.TryParse(strInput, out douOutput) == true)
-            {
-                caculateAnswer(0, douOutput); // 事先將公尺轉換成公分
-            }
-            else
-            {
-                txtInfo.Text = "請輸入數字";
-                txtCM.Text = "";
-            }
-        }
+        
 
         private void txtCM_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -77,9 +63,35 @@ namespace _20230327
                 txtYard.Text = string.Format("{0:0.############################################################################################################}", _value / 91.44);
         }
 
-        private void txtM_KeyUp(object sender, KeyEventArgs e)
+        
+
+   
+
+     
+
+        
+
+   
+
+        private void txtmg_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtM.Text;
+            strInput = txtmg.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                caculateAnswer(0, douOutput); // 事先將公尺轉換成公分
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtmg.Text = "";
+            }
+        }
+
+        private void txtg_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            strInput = txtg.Text;
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
@@ -88,13 +100,13 @@ namespace _20230327
             else
             {
                 txtInfo.Text = "請輸入數字";
-                txtM.Text = "";
+                txtg.Text = "";
             }
         }
 
-        private void txtKM_KeyUp(object sender, KeyEventArgs e)
+        private void txtkg_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtKM.Text;
+            strInput = txtkg.Text;
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
@@ -103,13 +115,13 @@ namespace _20230327
             else
             {
                 txtInfo.Text = "請輸入數字";
-                txtKM.Text = "";
+                txtkg.Text = "";
             }
         }
 
-        private void txtIn_KeyUp(object sender, KeyEventArgs e)
+        private void txtt_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtIn.Text;
+            strInput = txtt.Text;
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
@@ -118,13 +130,14 @@ namespace _20230327
             else
             {
                 txtInfo.Text = "請輸入數字";
-                txtIn.Text = "";
+                txtt.Text = "";
             }
         }
 
-        private void txtFt_KeyUp(object sender, KeyEventArgs e)
+        private void txtoz_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtFt.Text;
+
+            strInput = txtoz.Text;
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
@@ -133,13 +146,13 @@ namespace _20230327
             else
             {
                 txtInfo.Text = "請輸入數字";
-                txtFt.Text = "";
+                txtoz.Text = "";
             }
         }
 
-        private void txtYard_KeyUp(object sender, KeyEventArgs e)
+        private void txtlp_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtYard.Text;
+            strInput = txtlp.Text;
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
@@ -148,7 +161,7 @@ namespace _20230327
             else
             {
                 txtInfo.Text = "請輸入數字";
-                txtYard.Text = "";
+                txtlp.Text = "";
             }
         }
     }
